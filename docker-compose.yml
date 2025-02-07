@@ -101,8 +101,8 @@ services:
     depends_on: 
       - misp_mysql
     ports:
-      - "0.0.0.0:8080:80"    # Changed port from 80 to 8080
-      - "0.0.0.0:8443:443"   # Changed port from 443 to 8443
+      - "0.0.0.0:80:80"    # Changed port from 80 to 8080
+      - "0.0.0.0:443:443"   # Changed port from 443 to 8443
     volumes:
       - "./server-configs/:/var/www/MISP/app/Config/"
       - "./logs/:/var/www/MISP/app/tmp/logs/"
