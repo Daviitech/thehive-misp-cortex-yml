@@ -120,7 +120,7 @@ services:
       - "INIT=true"         
       - "CRON_USER_ID=1"   
       - "REDIS_FQDN=redis"
-      - "HOSTNAME=https://10.0.2.10"
+      - "BASEURL=https://10.0.2.10"
     networks:
       - SOC_NET
 
